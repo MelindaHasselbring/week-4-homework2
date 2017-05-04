@@ -1,0 +1,127 @@
+<!-- Author: Melinda Hasselbring
+Date:  05/03/2017
+Email: melinda.hasselbring@gmail.com -->
+
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <!--   For the size of the screen accross the board -->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CrystalsCollector!</title>
+
+  <!-- Added link to the jQuery Library -->
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
+  <!--   Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  </head>
+
+  <body>
+
+<div class="crystalgame">
+ <div class="row">
+    <div class="col-sm-6">
+
+
+  <div id="crystalsCollect">
+    <div class="row">
+      <div class="col-sm-4" >
+        <p id="crystals">CrystalsCollector!</p>
+    </div>
+  </div>
+</div>
+
+  <div id="crystalsCollect">
+    <div class="row">
+      <div class="col-sm-8"  id="requirement">
+        <p id="req">
+         You will be given a random number at the start of the game.<br><br>
+         
+         There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score. <br><br>
+         
+         You win the game by matching the toal score to random number, you loose the game if your total score goes above the random number.<br><br>
+         
+         The value of each crystal is hidden from you until you click on it.<br><br>
+         
+         Each time when the game starts, the game will change the values of each crystals.
+        </p>
+    </div>
+  </div>
+</div>
+
+  <div id="random">
+    <div class="row">
+      <div class="col-sm-2" id="rand-num">
+      <p id="rand"></p>  
+    </div>
+
+
+
+    <div class="row">
+      <div class="col-sm-1" id="status">
+        <p> Wins: 
+          <span id="wins"></span>
+        </p>
+
+        <p> Losses: 
+          <span id="losses"></span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="jewel-icon">
+    <div class="row">
+      <div class="col-sm-1"  id="diamond-icon">
+        <img src="assets/images/diamond.png" class="img-responsive"  alt="diamond"  height="42" width="42">
+      </div>
+
+      <div class="col-sm-1" id="spade-icon">
+        <img src="assets/images/spade.png" class="img-responsive" alt="spade"  height="42" width="42">
+      </div>
+
+      <div class="col-sm-1" id="heart-icon"> 
+        <img src="assets/images/heart.png" class="img-responsive" alt="heart"  height="42" width="42">
+      </div>
+
+      <div class="col-sm-1" id="clubs-icon">
+        <img src="assets/images/clubs.png" class="img-responsive" alt="clubs"  height="42" width="42">
+      </div>
+    </div>
+  </div> <!-- closes jewel-icon div -->
+
+    <div id="totScore">
+      <div class="row">
+        <div class="col-sm-3" id="totalscore">
+          <p> Your total score is: 
+                <span id="score"></span>
+        </div>
+      </div>
+    </div>
+
+    <div id="crystalvalue">
+      <div class="row">
+        <div class="col-sm-3"  id="c-value"> 
+          <p id="value"> </p>
+        </div>
+      </div>
+    </div>
+</div>
+</div> <!-- closes crystal-icon div -->
+
+    <script type="text/javascript" src="assets/javascript/game.js">
+    </script>
+  </div> <!-- closes col-sm-6 div -->
+</div> <!-- closes crystalgame div -->
+  </body>
+</html>
+
